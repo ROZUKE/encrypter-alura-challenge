@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Proyecto Encriptador</title>
+  </head>
+  <body>
+    <header class="container-header">
+      <img
+        class="header__logo"
+        src="assets/img/alura-logo.svg"
+        alt="Alura Logo"
+      />
+    </header>
+    <main>
+      <section class="container-logic">
+        <div class="container-input-text">
+          <textarea
+            class="input-text__textarea"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+        <div class="container-buttons">
+          <div class="warning">
+            <img src="assets/img/warning.svg" alt="Logo alerta" />
+            <p class="warning__text">
+              Solo letras minin&uacute;sculas y sin acentos
+            </p>
+          </div>
+          <div class="container-operator">
+            <button id="encript" class="button button--primary">
+              Encriptar
+            </button>
+            <button id="decrypt" class="button button--secondary">
+              Desiscriptar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="output-message">
+        <div class="container-output-message">
+          <div class="container-output-message-blank">
+            <div class="container-output-message-blank__img"></div>
+            <p class="container-output-message__message-alert">
+              Ning&uacute;n mensaje fue encontrado
+            </p>
+            <p class="container-output-message__message-description">
+              Ingresa el texto que desees encriptar o desencriptar
+            </p>
+          </div>
+          <div class="container-output-message-filled">
+            <textarea class="container-output-message__text"> </textarea>
+            <button id="copyText" class="button button-secondary pos__bottom">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
